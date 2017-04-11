@@ -91,7 +91,7 @@
     <sprite>sprites\spr_enemy_right</sprite>
     <sprite>sprites\spr_boss_snowdude</sprite>
     <sprite>sprites\spr_damage</sprite>
-    <sprite>sprites\spr_waypoint</sprite>
+    <sprite>sprites\spr_router</sprite>
     <sprite>sprites\spr_enemy_normal_attacking</sprite>
     <sprite>sprites\spr_particle_heal</sprite>
     <sprite>sprites\spr_enemy_normal</sprite>
@@ -111,10 +111,15 @@
       <script>scripts\scr_playerstate_stunned___EMPTY___.gml</script>
     </scripts>
     <scripts name="Enemy">
-      <script>scripts\scr_find_waypoints.gml</script>
       <script>scripts\scr_enemystate_idle.gml</script>
       <script>scripts\scr_enemystate_follow_player.gml</script>
       <script>scripts\scr_enemystate_attacking.gml</script>
+      <script>scripts\scr_enemystate_after_attacking.gml</script>
+      <scripts name="Pathfinding">
+        <script>scripts\scr_goto_next_router.gml</script>
+        <script>scripts\scr_update_path.gml</script>
+        <script>scripts\scr_calculate_path.gml</script>
+      </scripts>
     </scripts>
     <scripts name="particle stuff">
       <script>scripts\scr_particle_blood_initialize.gml</script>
@@ -122,7 +127,6 @@
       <script>scripts\scr_particle_heal_initialize.gml</script>
       <script>scripts\scr_particle_desert_initialize.gml</script>
     </scripts>
-    <script>scripts\scr_enemystate_after_attacking.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_8courier</font>
@@ -135,7 +139,7 @@
     <object>objects\obj_control</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_damage</object>
-    <object>objects\obj_waypoint</object>
+    <object>objects\obj_router</object>
     <object>objects\obj_lifeform</object>
     <object>objects\obj_testenemy</object>
     <object>objects\obj_particlesystem</object>
