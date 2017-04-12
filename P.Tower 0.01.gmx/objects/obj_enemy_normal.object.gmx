@@ -115,9 +115,15 @@ depth = -y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (sprite_index == spr_enemy_normal_attacking) {
+            <string>if (state == scr_enemystate_after_attacking) &amp;&amp; (sprite_index == spr_enemy_normal_exhausted) {
     state = scr_enemystate_idle;
 }
+if (state == scr_enemystate_after_attacking) &amp;&amp; (sprite_index == spr_enemy_normal_attacking) {
+    image_index = 0;
+    image_speed = 6/60;
+    sprite_index = spr_enemy_normal_exhausted;
+}
+
 </string>
           </argument>
         </arguments>

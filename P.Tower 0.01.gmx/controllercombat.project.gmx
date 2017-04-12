@@ -93,6 +93,7 @@
     <sprite>sprites\spr_damage</sprite>
     <sprite>sprites\spr_router</sprite>
     <sprite>sprites\spr_enemy_normal_attacking</sprite>
+    <sprite>sprites\spr_enemy_normal_exhausted</sprite>
     <sprite>sprites\spr_particle_heal</sprite>
     <sprite>sprites\spr_enemy_normal</sprite>
   </sprites>
