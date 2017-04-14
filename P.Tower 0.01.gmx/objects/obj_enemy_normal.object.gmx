@@ -98,9 +98,7 @@ if (state != scr_enemystate_idle) alarm[0] = 10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///State + animation
-
-
+            <string>///State + animation + death
 if (state == scr_enemystate_follow_player) {
     sprite_index = spr_enemy_normal;
     image_index = 1;
@@ -109,13 +107,10 @@ if (state == scr_enemystate_follow_player) {
     image_index = 0;
 }
 
-
-
 script_execute(state);
-
 scr_physics();
 
-if (hp &lt; 0) {
+if (hp &lt;= 0) {
     instance_destroy();
 }
 depth = -y;

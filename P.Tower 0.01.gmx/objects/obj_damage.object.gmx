@@ -87,12 +87,12 @@ if !(creator == obj_player.id) {
 if !(other.id == creator) {
     if (other.id == obj_player.id) {
         //Damaging the player
-        show_debug_message("Damaging the player");
+        show_debug_message("Damaging the player with " + string(dmg) + " damage out of their " + string(other.hp) + " hp");
         other.hp -= dmg;
         instance_destroy();
     } else {
         //Damaging the enemy
-        show_debug_message("Damaging the enemy");
+        show_debug_message("Damaging the enemy with " + string(dmg) + " damage out of their " + string(other.hp) + " hp");
         other.hp -= dmg;
         instance_destroy();
     }
