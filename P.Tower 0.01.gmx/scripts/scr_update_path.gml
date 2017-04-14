@@ -8,7 +8,7 @@ if !collision_line(x, y, end_target_x, end_target_y, obj_solid, false, true) {
 } else {
     //Else find path using routers
     scr_calculate_path();
-        
+    
     //Go to next step on path
     scr_goto_next_router();
 }
