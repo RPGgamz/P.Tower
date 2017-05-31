@@ -63,7 +63,7 @@ scr_particle_desert_initialize();
             <kind>1</kind>
             <string>///Create the particles inside the emitter
 //part_emitter_stream(global.ps, emitter, global.pt_snow, 2);
-part_emitter_stream(global.ps, emitter_desert, global.pt_desert, 2);
+part_emitter_stream(global.ps, emitter_desert, global.pt_desert, 3);
 </string>
           </argument>
         </arguments>
